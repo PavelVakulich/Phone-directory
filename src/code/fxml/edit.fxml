@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0"
+            prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="code.controllers.EditController">
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="btnOk" defaultButton="true" mnemonicParsing="false" onAction="#actionOk"
+                        prefHeight="30.0" prefWidth="120.0" text="OK">
+                    <HBox.margin>
+                        <Insets right="15.0"/>
+                    </HBox.margin>
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="btnCancel" cancelButton="true" mnemonicParsing="false" onAction="#actionClose"
+                        prefHeight="30.0" prefWidth="120.0" text="%key.cancel">
+                    <HBox.margin>
+                        <Insets left="15.0"/>
+                    </HBox.margin>
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </bottom>
+    <left>
+        <VBox alignment="TOP_CENTER" prefHeight="120.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="%label.name">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets top="30.0"/>
+                    </VBox.margin>
+                </Label>
+                <Label text="%label.phone">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets top="30.0"/>
+                    </VBox.margin>
+                </Label>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <VBox alignment="TOP_CENTER" prefHeight="120.0" prefWidth="270.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="fieldName">
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="25.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </TextField>
+                <TextField fx:id="fieldPhone">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </TextField>
+            </children>
+            <BorderPane.margin>
+                <Insets right="20.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </center>
+</BorderPane>
+
