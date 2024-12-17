@@ -12,3 +12,6 @@
 - **Java 17+**
 - **JavaFX**
 - **SQLiteDatabase**
+
+- ![image](https://github.com/user-attachments/assets/ae4ec1e4-6725-475c-8e53-a2c4836f2650)
+
